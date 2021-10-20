@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DBEF00D-E9D2-18BF-B254-BC1E1E2815F0}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RCCPP</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\Debug-windows-x86_64\RCCPP\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\RCCPP\</IntDir>
+    <TargetName>RCCPP</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\Release-windows-x86_64\RCCPP\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\RCCPP\</IntDir>
+    <TargetName>RCCPP</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <OutDir>bin\Distribution-windows-x86_64\RCCPP\</OutDir>
+    <IntDir>bin-int\Distribution-windows-x86_64\RCCPP\</IntDir>
+    <TargetName>RCCPP</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>RCCPP\RuntimeCompiler;RCCPP\RuntimeobjectSystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>RCCPP\RuntimeCompiler;RCCPP\RuntimeobjectSystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>RCCPP\RuntimeCompiler;RCCPP\RuntimeobjectSystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="RCCPP\RuntimeCompiler\AUArray.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\BuildTool.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\CompileOptions.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\Compiler.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\FileChangeNotifier.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\FileSystemUtils.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\ICompilerLogger.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\IFileChangeNotifier.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcher.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherImpl.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherOSX.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32.h" />
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32_AltImpl.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IObject.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IObjectFactorySystem.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IRuntimeObjectSystem.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ISimpleSerializer.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectFactorySystem\ObjectFactorySystem.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectInterface.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectInterfacePerModule.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeInclude.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeLinkLibrary.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeProtector.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeSourceDependency.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeTracking.h" />
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\SimpleSerializer\SimpleSerializer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RCCPP\RuntimeCompiler\BuildTool.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\Compiler_PlatformPosix.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\Compiler_PlatformWindows.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\FileChangeNotifier.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcher.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherOSX.cpp" />
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\ObjectFactorySystem\ObjectFactorySystem.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\ObjectInterfacePerModuleSource.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem_PlatformPosix.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem_PlatformWindows.cpp" />
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\SimpleSerializer\SimpleSerializer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.cpp~" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

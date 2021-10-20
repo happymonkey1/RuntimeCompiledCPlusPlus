@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RuntimeCompiler">
+      <UniqueIdentifier>{844E3FE0-F0D9-ACA4-F9EA-2F9965F508A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RuntimeCompiler\SimpleFileWatcher">
+      <UniqueIdentifier>{6B5CC5E5-D7CA-1A65-20B4-D5648C611001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RuntimeObjectSystem">
+      <UniqueIdentifier>{C551CFA1-31B3-ACAF-BA20-F3612681E36E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RuntimeObjectSystem\ObjectFactorySystem">
+      <UniqueIdentifier>{28F25585-9481-1770-9D7D-F887098C527C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RuntimeObjectSystem\SimpleSerializer">
+      <UniqueIdentifier>{58D6D2A3-44BD-949B-ED0D-FBB8D9D30D02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RCCPP\RuntimeCompiler\AUArray.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\BuildTool.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\CompileOptions.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\Compiler.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\FileChangeNotifier.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\FileSystemUtils.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\ICompilerLogger.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\IFileChangeNotifier.h">
+      <Filter>RuntimeCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcher.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherImpl.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherOSX.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32_AltImpl.h">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IObject.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IObjectFactorySystem.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\IRuntimeObjectSystem.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ISimpleSerializer.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectFactorySystem\ObjectFactorySystem.h">
+      <Filter>RuntimeObjectSystem\ObjectFactorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectInterface.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\ObjectInterfacePerModule.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeInclude.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeLinkLibrary.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeProtector.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeSourceDependency.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\RuntimeTracking.h">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RCCPP\RuntimeObjectSystem\SimpleSerializer\SimpleSerializer.h">
+      <Filter>RuntimeObjectSystem\SimpleSerializer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RCCPP\RuntimeCompiler\BuildTool.cpp">
+      <Filter>RuntimeCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\Compiler_PlatformPosix.cpp">
+      <Filter>RuntimeCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\Compiler_PlatformWindows.cpp">
+      <Filter>RuntimeCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\FileChangeNotifier.cpp">
+      <Filter>RuntimeCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcher.cpp">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.cpp">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherOSX.cpp">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherWin32.cpp">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\ObjectFactorySystem\ObjectFactorySystem.cpp">
+      <Filter>RuntimeObjectSystem\ObjectFactorySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\ObjectInterfacePerModuleSource.cpp">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem.cpp">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem_PlatformPosix.cpp">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\RuntimeObjectSystem_PlatformWindows.cpp">
+      <Filter>RuntimeObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RCCPP\RuntimeObjectSystem\SimpleSerializer\SimpleSerializer.cpp">
+      <Filter>RuntimeObjectSystem\SimpleSerializer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RCCPP\RuntimeCompiler\SimpleFileWatcher\FileWatcherLinux.cpp~">
+      <Filter>RuntimeCompiler\SimpleFileWatcher</Filter>
+    </None>
+  </ItemGroup>
+</Project>
